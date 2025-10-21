@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">iot_eva2</string>
+    <string name="inicio_sesion">Inicio de Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="clave">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="recuperar">¿Olvidaste tu contraseña?</string>
+    <string name="logo_desc">Logo de la aplicación</string>
+    <string name="logout_button">Cerrar sesión</string>
+    <string name="splash_welcome">Bienvenidos</string>
+
+</resources>
+
+
