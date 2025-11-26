@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="70dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logoLogin"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_android"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:id="@+id/textoBienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Bienvenido"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/etPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:paddingHorizontal="3dp"
+                        android:paddingVertical="10dp"
+                        android:text="Mantener sesión activa" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="32dp"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="10dp"
+                        android:text="Iniciar Sesión"
+                        android:textStyle="bold"
+                        android:backgroundTint="#2196F3"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="¿Olvidaste tu clave?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="¿No tienes cuenta? Regístrate"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

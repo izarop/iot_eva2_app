@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerNoticiaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNoticiaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="Imagen de la noticia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTituloDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                tools:text="Título completo de la noticia seleccionada" />
+
+            <TextView
+                android:id="@+id/tvAutorFechaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="16dp"
+                tools:text="Por [Autor] - 21/11/2025" />
+
+            <TextView
+                android:id="@+id/tvResumenDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="16dp"
+                tools:text="Resumen de la noticia." />
+
+            <TextView
+                android:id="@+id/tvContenidoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                tools:text="Aquí va todo el contenido de la noticia. Este es el texto largo que explica el tema a detalle." />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

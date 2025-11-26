@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252839015192",
+    "project_id": "fir-proyecto-elisa",
+    "storage_bucket": "fir-proyecto-elisa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252839015192:android:16a5d2510c34d949d8646d",
+        "android_client_info": {
+          "package_name": "com.example.iot_elisa_eva2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb8An50bnahhuZy4QvUEZ3QtOWBf512B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
